@@ -2,7 +2,7 @@
 
 系统化的个人知识管理平台 —— 从基础到实践，从理论到洞察。
 
-在线访问：https://grow21.github.io/knowledge-os/
+在线访问：https://github.com/guochaodongg/knowledge-os
 
 ## 结构
 
