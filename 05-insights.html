@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技术洞察 · 我的知识库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="index.html"><span class="logo">K</span> 我的知识库</a>
+    <nav class="top-nav">
+      <a href="index.html">首页</a>
+      <a href="01-foundations.html">基础知识</a>
+      <a href="02-technologies.html">技术栈</a>
+      <a href="03-architecture.html">架构设计</a>
+      <a href="04-projects.html">项目实践</a>
+      <a href="05-insights.html" class="active">技术洞察</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索文档…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换深色模式">🌙</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="nav-label">导航</div>
+      <a href="index.html">知识体系概览</a>
+      <div class="nav-label">知识板块</div>
+      <a href="01-foundations.html">01 基础知识</a>
+      <a href="02-technologies.html">02 技术栈</a>
+      <a href="03-architecture.html">03 架构设计</a>
+      <a href="04-projects.html">04 项目实践</a>
+      <a href="05-insights.html" class="active">05 技术洞察</a>
+      <div class="nav-label">本页目录</div>
+      <a href="#engineering">工程方法论</a>
+      <a href="#career">职业发展</a>
+      <a href="#trend">技术趋势</a>
+    </aside>
+
+    <main class="content">
+      <h1 class="page-title">05 技术洞察</h1>
+      <p class="page-sub">工程思考、最佳实践与职业发展。</p>
+
+      <h2 class="section" id="engineering">🛠️ 工程方法论</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li>问题定义优先：先问"解决什么问题"，再谈"用什么技术"</li>
+          <li>写代码是最后一步：设计、评审、测试先行</li>
+          <li>度量驱动优化：没有数据就没有优化</li>
+          <li>输出倒逼输入：写作与分享是最好的学习</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="career">🧭 职业发展</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li>T 型成长：一门深入，多门涉猎</li>
+          <li>构建个人影响力：开源、博客、分享</li>
+          <li>定期复盘：季度回顾目标与差距</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="trend">📈 技术趋势</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li>AI 工程化：LLM 应用从 Demo 走向生产</li>
+          <li>云原生深化：平台工程与内部开发者平台</li>
+          <li>端侧智能：小模型与边缘计算</li>
+        </ul>
+      </div>
+
+      <p style="margin-top:40px"><a href="index.html">← 返回首页</a></p>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2026 我的知识库</footer>
+  <button class="back-top" id="backTop" onclick="scrollToTop()" title="返回顶部">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

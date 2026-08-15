@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技术栈 · 我的知识库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="index.html"><span class="logo">K</span> 我的知识库</a>
+    <nav class="top-nav">
+      <a href="index.html">首页</a>
+      <a href="01-foundations.html">基础知识</a>
+      <a href="02-technologies.html" class="active">技术栈</a>
+      <a href="03-architecture.html">架构设计</a>
+      <a href="04-projects.html">项目实践</a>
+      <a href="05-insights.html">技术洞察</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索文档…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换深色模式">🌙</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="nav-label">导航</div>
+      <a href="index.html">知识体系概览</a>
+      <div class="nav-label">知识板块</div>
+      <a href="01-foundations.html">01 基础知识</a>
+      <a href="02-technologies.html" class="active">02 技术栈</a>
+      <a href="03-architecture.html">03 架构设计</a>
+      <a href="04-projects.html">04 项目实践</a>
+      <a href="05-insights.html">05 技术洞察</a>
+      <div class="nav-label">本页目录</div>
+      <a href="#frontend">前端</a>
+      <a href="#backend">后端</a>
+      <a href="#cloud">云计算与运维</a>
+      <a href="#ai">AI / 机器学习</a>
+    </aside>
+
+    <main class="content">
+      <h1 class="page-title">02 技术栈</h1>
+      <p class="page-sub">具体的技术领域与工具链。<span class="badge yellow">intermediate</span></p>
+
+      <h2 class="section" id="frontend">🎨 前端</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li><strong>语言基础</strong>：HTML / CSS / JavaScript / TypeScript</li>
+          <li><strong>框架</strong>：React、Vue、Svelte 的核心思想与取舍</li>
+          <li><strong>工程化</strong>：构建工具、模块化、性能优化、CI</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="backend">⚙️ 后端</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li><strong>语言</strong>：Go / Java / Python / Node.js</li>
+          <li><strong>API 设计</strong>：RESTful、GraphQL、gRPC</li>
+          <li><strong>中间件</strong>：消息队列、缓存、任务调度</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="cloud">☁️ 云计算与运维</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li><strong>容器化</strong>：Docker、Kubernetes</li>
+          <li><strong>云服务</strong>：计算、存储、Serverless</li>
+          <li><strong>可观测性</strong>：日志、监控、链路追踪</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="ai">🤖 AI / 机器学习</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li><strong>基础</strong>：机器学习、深度学习经典模型</li>
+          <li><strong>大模型</strong>：LLM 原理、Prompt 工程、RAG、Agent</li>
+          <li><strong>工程落地</strong>：推理优化、评测、安全</li>
+        </ul>
+      </div>
+
+      <p style="margin-top:40px"><a href="03-architecture.html">下一节：03 架构设计 →</a></p>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2026 我的知识库</footer>
+  <button class="back-top" id="backTop" onclick="scrollToTop()" title="返回顶部">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

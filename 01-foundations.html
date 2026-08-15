@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基础知识 · 我的知识库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="index.html"><span class="logo">K</span> 我的知识库</a>
+    <nav class="top-nav">
+      <a href="index.html">首页</a>
+      <a href="01-foundations.html" class="active">基础知识</a>
+      <a href="02-technologies.html">技术栈</a>
+      <a href="03-architecture.html">架构设计</a>
+      <a href="04-projects.html">项目实践</a>
+      <a href="05-insights.html">技术洞察</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索文档…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换深色模式">🌙</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="nav-label">导航</div>
+      <a href="index.html">知识体系概览</a>
+      <div class="nav-label">知识板块</div>
+      <a href="01-foundations.html" class="active">01 基础知识</a>
+      <a href="02-technologies.html">02 技术栈</a>
+      <a href="03-architecture.html">03 架构设计</a>
+      <a href="04-projects.html">04 项目实践</a>
+      <a href="05-insights.html">05 技术洞察</a>
+      <div class="nav-label">本页目录</div>
+      <a href="#os">操作系统</a>
+      <a href="#network">计算机网络</a>
+      <a href="#algorithm">算法与数据结构</a>
+      <a href="#database">数据库</a>
+    </aside>
+
+    <main class="content">
+      <h1 class="page-title">01 基础知识</h1>
+      <p class="page-sub">核心基础，是所有技术的根基。<span class="badge green">beginner</span></p>
+
+      <h2 class="section" id="os">🖥️ 操作系统</h2>
+      <div class="card">
+        <p>进程与线程、内存管理、文件系统、I/O 模型等核心概念。</p>
+        <ul class="feature-list">
+          <li>进程 / 线程 / 协程的区别与适用场景</li>
+          <li>虚拟内存、页表与缺页中断</li>
+          <li>文件系统与磁盘 I/O</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="network">🌐 计算机网络</h2>
+      <div class="card">
+        <p>从 TCP/IP 四层模型到 HTTP/3，理解数据如何在网络中传输。</p>
+        <ul class="feature-list">
+          <li>TCP 三次握手 / 四次挥手、拥塞控制</li>
+          <li>HTTP/1.1 → HTTP/2 → HTTP/3 演进</li>
+          <li>DNS、CDN 与负载均衡</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="algorithm">🧩 算法与数据结构</h2>
+      <div class="card">
+        <p>数据结构与经典算法，工程能力的基本功。</p>
+        <ul class="feature-list">
+          <li>数组、链表、哈希表、树、堆、图</li>
+          <li>排序、二分、动态规划、贪心</li>
+          <li>复杂度分析与取舍</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="database">🗄️ 数据库</h2>
+      <div class="card">
+        <p>关系型与 NoSQL 数据库的原理与实践。</p>
+        <ul class="feature-list">
+          <li>SQL 优化与执行计划</li>
+          <li>事务 ACID、隔离级别、MVCC</li>
+          <li>索引原理（B+ 树）与分库分表</li>
+        </ul>
+      </div>
+
+      <p style="margin-top:40px"><a href="02-technologies.html">下一节：02 技术栈 →</a></p>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2026 我的知识库</footer>
+  <button class="back-top" id="backTop" onclick="scrollToTop()" title="返回顶部">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目实践 · 我的知识库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="index.html"><span class="logo">K</span> 我的知识库</a>
+    <nav class="top-nav">
+      <a href="index.html">首页</a>
+      <a href="01-foundations.html">基础知识</a>
+      <a href="02-technologies.html">技术栈</a>
+      <a href="03-architecture.html">架构设计</a>
+      <a href="04-projects.html" class="active">项目实践</a>
+      <a href="05-insights.html">技术洞察</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索文档…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换深色模式">🌙</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="nav-label">导航</div>
+      <a href="index.html">知识体系概览</a>
+      <div class="nav-label">知识板块</div>
+      <a href="01-foundations.html">01 基础知识</a>
+      <a href="02-technologies.html">02 技术栈</a>
+      <a href="03-architecture.html">03 架构设计</a>
+      <a href="04-projects.html" class="active">04 项目实践</a>
+      <a href="05-insights.html">05 技术洞察</a>
+      <div class="nav-label">本页目录</div>
+      <a href="#project-a">示例项目 A</a>
+      <a href="#project-b">示例项目 B</a>
+      <a href="#template">复盘模板</a>
+    </aside>
+
+    <main class="content">
+      <h1 class="page-title">04 项目实践</h1>
+      <p class="page-sub">真实项目案例与实战经验，理论与实践的结合。</p>
+
+      <h2 class="section" id="project-a">📦 示例项目 A：XX 管理系统 <span class="badge green">已完结</span></h2>
+      <div class="card">
+        <p><strong>背景</strong>：一句话描述项目要解决的问题。</p>
+        <p><strong>技术方案</strong>：架构图 + 关键技术选型及理由。</p>
+        <p><strong>我的职责</strong>：负责的模块与核心贡献。</p>
+        <p><strong>成果</strong>：量化指标（性能提升 x%、覆盖用户 y 等）。</p>
+        <p><strong>踩坑与经验</strong>：遇到的难点、排查过程、沉淀的方法。</p>
+      </div>
+
+      <h2 class="section" id="project-b">📦 示例项目 B：YY 工具 <span class="badge yellow">进行中</span></h2>
+      <div class="card">
+        <p><strong>背景</strong>：…</p>
+        <p><strong>技术方案</strong>：…</p>
+        <p><strong>当前进展</strong>：里程碑与待办。</p>
+      </div>
+
+      <h2 class="section" id="template">📝 项目复盘模板</h2>
+      <div class="card">
+        <ol class="steps">
+          <li>背景与目标 —— 为什么做，成功标准是什么</li>
+          <li>方案设计 —— 备选方案对比与取舍</li>
+          <li>实施过程 —— 关键节点与决策</li>
+          <li>结果复盘 —— 数据验证，达成了什么</li>
+          <li>经验沉淀 —— 可复用的方法与避坑清单</li>
+        </ol>
+      </div>
+
+      <p style="margin-top:40px"><a href="05-insights.html">下一节：05 技术洞察 →</a></p>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2026 我的知识库</footer>
+  <button class="back-top" id="backTop" onclick="scrollToTop()" title="返回顶部">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

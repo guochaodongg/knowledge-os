@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>架构设计 · 我的知识库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="index.html"><span class="logo">K</span> 我的知识库</a>
+    <nav class="top-nav">
+      <a href="index.html">首页</a>
+      <a href="01-foundations.html">基础知识</a>
+      <a href="02-technologies.html">技术栈</a>
+      <a href="03-architecture.html" class="active">架构设计</a>
+      <a href="04-projects.html">项目实践</a>
+      <a href="05-insights.html">技术洞察</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索文档…">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换深色模式">🌙</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="nav-label">导航</div>
+      <a href="index.html">知识体系概览</a>
+      <div class="nav-label">知识板块</div>
+      <a href="01-foundations.html">01 基础知识</a>
+      <a href="02-technologies.html">02 技术栈</a>
+      <a href="03-architecture.html" class="active">03 架构设计</a>
+      <a href="04-projects.html">04 项目实践</a>
+      <a href="05-insights.html">05 技术洞察</a>
+      <div class="nav-label">本页目录</div>
+      <a href="#principles">架构原则</a>
+      <a href="#distributed">分布式系统</a>
+      <a href="#concurrency">高并发设计</a>
+      <a href="#evolution">架构演进</a>
+    </aside>
+
+    <main class="content">
+      <h1 class="page-title">03 架构设计</h1>
+      <p class="page-sub">系统架构与设计模式，从单体到分布式。<span class="badge red">advanced</span></p>
+
+      <h2 class="section" id="principles">📐 架构原则</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li>高内聚、低耦合，关注点分离</li>
+          <li>KISS / YAGNI：避免过度设计</li>
+          <li>为变化而设计：识别稳定点与易变点</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="distributed">🌐 分布式系统</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li>CAP 定理与一致性模型（强一致 / 最终一致）</li>
+          <li>分布式事务：2PC、TCC、Saga</li>
+          <li>共识算法：Raft、Paxos 的工程应用</li>
+          <li>服务治理：注册发现、熔断、限流、降级</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="concurrency">⚡ 高并发设计</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li>多级缓存：本地缓存 → 分布式缓存 → 数据库</li>
+          <li>异步削峰：消息队列、事件驱动</li>
+          <li>无状态水平扩展与读写分离</li>
+        </ul>
+      </div>
+
+      <h2 class="section" id="evolution">🔄 架构演进</h2>
+      <div class="card">
+        <table>
+          <tr><th>阶段</th><th>形态</th><th>适用规模</th></tr>
+          <tr><td>单体架构</td><td>单应用 + 数据库</td><td>初创 / MVP</td></tr>
+          <tr><td>垂直拆分</td><td>按业务拆应用</td><td>业务增长期</td></tr>
+          <tr><td>微服务</td><td>服务化 + 治理体系</td><td>大规模团队协作</td></tr>
+          <tr><td>服务网格 / Serverless</td><td>基础设施下沉</td><td>云原生成熟期</td></tr>
+        </table>
+      </div>
+
+      <p style="margin-top:40px"><a href="04-projects.html">下一节：04 项目实践 →</a></p>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2026 我的知识库</footer>
+  <button class="back-top" id="backTop" onclick="scrollToTop()" title="返回顶部">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

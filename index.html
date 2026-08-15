@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的知识库 · Knowledge OS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <a class="site-title" href="index.html"><span class="logo">K</span> 我的知识库</a>
+    <nav class="top-nav">
+      <a href="index.html" class="active">首页</a>
+      <a href="01-foundations.html">基础知识</a>
+      <a href="02-technologies.html">技术栈</a>
+      <a href="03-architecture.html">架构设计</a>
+      <a href="04-projects.html">项目实践</a>
+      <a href="05-insights.html">技术洞察</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索文档…  Ctrl+K">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="切换深色模式">🌙</button>
+  </header>
+
+  <div class="layout">
+    <!-- 左侧导航 -->
+    <aside class="sidebar">
+      <div class="nav-label">导航</div>
+      <a href="index.html" class="active">知识体系概览</a>
+      <div class="nav-label">知识板块</div>
+      <a href="01-foundations.html">01 基础知识</a>
+      <a href="02-technologies.html">02 技术栈</a>
+      <a href="03-architecture.html">03 架构设计</a>
+      <a href="04-projects.html">04 项目实践</a>
+      <a href="05-insights.html">05 技术洞察</a>
+      <div class="nav-label">参考</div>
+      <a href="#stats">知识统计</a>
+      <a href="#contrib">贡献指南</a>
+    </aside>
+
+    <!-- 内容区 -->
+    <main class="content">
+      <h1 class="page-title">我的知识库</h1>
+      <p class="page-sub">系统化的个人知识管理平台 —— 从基础到实践，从理论到洞察</p>
+
+      <p>欢迎来到我的知识库！这是一个结构化的知识体系，用于系统地学习、积累和应用知识。所有内容按照五层金字塔组织，循序渐进。</p>
+
+      <h2 class="section">🎯 知识体系概览</h2>
+      <div class="pyramid">
+        <a class="py-1" href="05-insights.html"><span>05 洞察层</span><span class="p-desc">技术思考 · 职业发展</span></a>
+        <a class="py-2" href="04-projects.html"><span>04 项目层</span><span class="p-desc">实战案例 · 项目经验</span></a>
+        <a class="py-3" href="03-architecture.html"><span>03 架构层</span><span class="p-desc">系统设计 · 架构模式</span></a>
+        <a class="py-4" href="02-technologies.html"><span>02 技术层</span><span class="p-desc">技术栈 · 工具链</span></a>
+        <a class="py-5" href="01-foundations.html"><span>01 基础层</span><span class="p-desc">核心基础 · 根基</span></a>
+      </div>
+
+      <h2 class="section">📚 知识分类</h2>
+      <div class="grid cols-2">
+        <a class="card card-link" href="01-foundations.html">
+          <h3>01 基础知识</h3>
+          <p>核心基础，是一切技术的根基。</p>
+          <span class="badge">操作系统</span> <span class="badge">网络</span> <span class="badge">算法</span> <span class="badge">数据库</span>
+        </a>
+        <a class="card card-link" href="02-technologies.html">
+          <h3>02 技术栈</h3>
+          <p>具体的技术领域与工具链，涵盖主流方向。</p>
+          <span class="badge">前端</span> <span class="badge">后端</span> <span class="badge">云计算</span> <span class="badge">AI</span>
+        </a>
+        <a class="card card-link" href="03-architecture.html">
+          <h3>03 架构设计</h3>
+          <p>系统架构与设计模式，从单体到分布式。</p>
+          <span class="badge">分布式</span> <span class="badge">高并发</span> <span class="badge">平台化</span>
+        </a>
+        <a class="card card-link" href="04-projects.html">
+          <h3>04 项目实践</h3>
+          <p>真实项目案例与实战经验，理论与实践结合。</p>
+          <span class="badge">案例复盘</span> <span class="badge">踩坑记录</span>
+        </a>
+        <a class="card card-link" href="05-insights.html">
+          <h3>05 技术洞察</h3>
+          <p>工程思考、最佳实践与职业发展。</p>
+          <span class="badge">方法论</span> <span class="badge">职业规划</span> <span class="badge">技术趋势</span>
+        </a>
+        <div class="card">
+          <h3>🔍 如何使用本站</h3>
+          <ul class="feature-list">
+            <li>顶部搜索框可全文检索</li>
+            <li>左侧导航浏览知识结构</li>
+            <li>右上角切换深色模式</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section">🚀 快速开始</h2>
+      <ol class="steps">
+        <li><strong>打好基础</strong> —— 从 <a href="01-foundations.html">01 基础知识</a> 开始，掌握核心概念。</li>
+        <li><strong>选择方向</strong> —— 在 <a href="02-technologies.html">02 技术栈</a> 中选择感兴趣的方向深入学习。</li>
+        <li><strong>理解架构</strong> —— 学习 <a href="03-architecture.html">03 架构设计</a>，培养系统思维。</li>
+        <li><strong>动手实践</strong> —— 参考 <a href="04-projects.html">04 项目实践</a> 中的案例，动手做项目。</li>
+        <li><strong>持续提升</strong> —— 阅读 <a href="05-insights.html">05 技术洞察</a>，形成自己的技术观。</li>
+      </ol>
+
+      <h2 class="section" id="stats">📊 知识统计</h2>
+      <div class="stats">
+        <div class="stat"><div class="num">5</div><div class="label">知识层级</div></div>
+        <div class="stat"><div class="num">10+</div><div class="label">技术领域</div></div>
+        <div class="stat"><div class="num">50+</div><div class="label">子主题分类</div></div>
+        <div class="stat"><div class="num">∞</div><div class="label">持续更新中</div></div>
+      </div>
+
+      <h2 class="section" id="contrib">🤝 贡献与维护</h2>
+      <p>这是一个持续成长的知识库。维护方式：</p>
+      <ul class="feature-list">
+        <li>补充和完善现有内容</li>
+        <li>添加新的主题与案例</li>
+        <li>定期回顾，迭代过时内容</li>
+      </ul>
+
+      <p style="margin-top:48px;color:var(--text-soft);font-size:0.85rem">最后更新：2026-08-15</p>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2026 我的知识库 · Made with HTML/CSS/JS · 纯静态、可部署到任意平台</footer>
+  <button class="back-top" id="backTop" onclick="scrollToTop()" title="返回顶部">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
